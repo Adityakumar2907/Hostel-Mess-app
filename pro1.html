@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hostel 10 C/D Mess App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏠 Hostel 10 C/D Mess Menu</h1>
+
+    <!-- Day Selection -->
+    <label>Select Day:</label>
+    <select id="daySelect" onchange="showMenu()">
+        <option value="">--Select Day--</option>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+    </select>
+
+    <!-- Menu Section -->
+    <div id="menuSection">
+        <h2>🍽️ Today's Menu</h2>
+
+        <p><b>Morning:</b> <span id="morning"></span></p>
+        <p><b>Afternoon:</b> <span id="afternoon"></span></p>
+        <p><b>Evening:</b> <span id="evening"></span></p>
+        <p><b>Night:</b> <span id="night"></span></p>
+    </div>
+
+    <!-- Change Option -->
+    <div class="change-box">
+        <p>Do you want to change the menu?</p>
+        <button onclick="showFeedback()">Yes</button>
+        <button onclick="alert('Thank you!')">No</button>
+    </div>
+
+    <!-- Feedback -->
+    <div id="feedbackSection">
+        <h3>📝 Feedback</h3>
+        <textarea id="feedback" placeholder="Enter your suggestion..."></textarea>
+        <button onclick="submitFeedback()">Submit</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

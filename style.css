@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+select, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+#menuSection {
+    margin-top: 20px;
+}
+
+.change-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.change-box button {
+    width: 45%;
+    margin: 5px;
+}
+
+#feedbackSection {
+    display: none;
+    margin-top: 15px;
+}
